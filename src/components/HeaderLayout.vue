@@ -82,6 +82,6 @@ export default {
     width: 100%;
     padding: 0.5rem 2rem;
     border-bottom: 1px;
-    border-color: rgb(107 114 128 / var(--tw-border-opacity));
+    border-color: rgb(107 114 128 );
     z-index: 1000; /* Adjust z-index as needed */
 }</style>

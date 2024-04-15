@@ -2,7 +2,6 @@
     <MainLayout>
         <Fullstack />
     </MainLayout>
-    <AboutLayout />
     <Works />
     <ToolStack />
 
@@ -13,7 +12,6 @@
 </template>
 
 <script setup>
-import AboutLayout from "../components/AboutLayout.vue";
 import Contact from "../components/Contact.vue";
 import Fullstack from "../components/Fullstack.vue";
 import MainLayout from "../components/BannerLayout.vue";
