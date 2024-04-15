@@ -28,7 +28,8 @@
             class="typing hide absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 tracking-widest font-black text-white z-10"
             style="font-size: 4vw"
         >
-            AKO's PORTFOLIO
+        P3 Enterprise
+
         </h1>
     </header>
 </template>
