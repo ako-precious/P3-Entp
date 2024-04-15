@@ -1,5 +1,5 @@
 <template>
-    <header
+    <!-- <header
         class="header bg-gray-200 dark:bg-darkblue fixed top-0 left-0 w-full flex justify-start items-center z-50 h-screen transition-all"
     >
         <div class="ml-6 h-12 w-12">
@@ -30,7 +30,7 @@
         >
         P3 Enterprise
         </h1>
-    </header>
+    </header> -->
 
     <slot></slot>
 </template>
