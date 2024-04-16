@@ -15,7 +15,7 @@
         <div class="flex flex-col items-center justify-center w-full">
             <form action="" class="w-full" method="post">
                 <div class="relative z-0 w-full mb-6 group">
-                    <input
+                    <input v-model="phoneNumber" 
                         type="text"
                         name="floating_first_name"
                         id="floating_first_name"
@@ -24,16 +24,16 @@
                         required
                     />
                     <label for="floating_first_name" class="label"
-                        >First name</label
+                        >Phone Number </label
                     >
                 </div>
                 
                 <div class="relative z-0 w-full mb-6 group">
-                    <textarea
+                    <textarea  v-model="message"
                         name=""
                         id=""
                         cols="30"
-                        rows="7"
+                        rows="4"
                         placeholder=" "
                         required
                         class="input peer"
@@ -43,7 +43,7 @@
                         >Message</label
                     >
                 </div>
-                <button type="submit">
+                <button   @click="sendMessage">
                     <a
                         class="group text-white link bg-white overflow-hidden relative w-[120px] h-12 flex justify-center items-center ease-in-out transition-all before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:delay-500 before:duration-700 before:bg-red after:absolute after:top-0 after:right-0 after:w-1 after:h-full after:delay-500 after:duration-700 after:bg-red hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
                         href="#contact"
@@ -65,7 +65,7 @@
     </div>
 </template>
 <script>
-import { Client } from 'whatsapp-web.js';
+// import { Client } from 'whatsapp-web.js';
 
 export default {
   data() {
@@ -75,17 +75,18 @@ export default {
     };
   },
   methods: {
-    async sendMessage() {
-      try {
-        const client = new Client();
-        await client.initialize();
-
-        const chat = await client.getChatById(this.phoneNumber + '@c.us');
-        await chat.sendMessage(this.message);
-        console.log('Message sent successfully');
-      } catch (error) {
-        console.error('Error sending message:', error);
-      }
+    sendMessage() {
+      // Replace '1234567890' with the recipient's phone number
+      const phoneNumber = '+17052793660';
+      
+      // Replace 'Hello!' with your desired message
+      const message = this.message;
+      
+      // Construct the WhatsApp URL with the recipient's phone number and the message
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      
+      // Open the WhatsApp URL in a new tab
+      window.open(url, '_blank');
     }
   }
 };
