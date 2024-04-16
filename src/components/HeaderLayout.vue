@@ -1,6 +1,7 @@
 <template>
-  <header  :class="{ fix : isHeaderFixed }"
-    class="header border-gray-500 bg-gray-200 dark:bg-gray-900  relative top-0 left-0 w-full flex justify-start items-center z-50 py-3 transition-all"
+  <header
+    :class="{ fix: isHeaderFixed }"
+    class="header border-gray-500 bg-gray-200 dark:bg-gray-900 relative top-0 left-0 w-full flex justify-start items-center z-50 py-3 transition-all"
   >
     <div class="ml-6 h-12 w-12">
       <div
@@ -38,10 +39,11 @@
 export default {
   inheritAttrs: false,
   data() {
-        return {
-            isHeaderFixed: false,
-        };
-    },
+    return {
+      isHeaderFixed: false
+    }
+  },
+  // eslint-disable-next-line vue/no-deprecated-destroyed-lifecycle
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
   },
@@ -75,13 +77,14 @@ export default {
 }
 </script>
 <style>
-.fix  {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 0.5rem 2rem;
-    border-bottom: 1px;
-    border-color: rgb(107 114 128 );
-    z-index: 1000; /* Adjust z-index as needed */
-}</style>
+.fix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px;
+  border-color: rgb(107 114 128);
+  z-index: 1000; /* Adjust z-index as needed */
+}
+</style>

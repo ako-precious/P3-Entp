@@ -27,38 +27,13 @@
                         >First name</label
                     >
                 </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input
-                        type="text"
-                        name="floating_last_name"
-                        id="floating_last_name"
-                        class="input peer"
-                        placeholder=" "
-                        required
-                    />
-                    <label for="floating_last_name" class="label">
-                        Email Address</label
-                    >
-                </div>
-                <div class="relative z-0 w-full mb-6 group">
-                    <input
-                        type="text"
-                        name="floating_last_name"
-                        id="floating_last_name"
-                        class="input peer"
-                        placeholder=" "
-                        required
-                    />
-                    <label for="floating_last_name" class="label">
-                        Subject</label
-                    >
-                </div>
+                
                 <div class="relative z-0 w-full mb-6 group">
                     <textarea
                         name=""
                         id=""
                         cols="30"
-                        rows="2"
+                        rows="7"
                         placeholder=" "
                         required
                         class="input peer"
@@ -89,3 +64,29 @@
         </div>
     </div>
 </template>
+<script>
+import { Client } from 'whatsapp-web.js';
+
+export default {
+  data() {
+    return {
+      phoneNumber: '',
+      message: ''
+    };
+  },
+  methods: {
+    async sendMessage() {
+      try {
+        const client = new Client();
+        await client.initialize();
+
+        const chat = await client.getChatById(this.phoneNumber + '@c.us');
+        await chat.sendMessage(this.message);
+        console.log('Message sent successfully');
+      } catch (error) {
+        console.error('Error sending message:', error);
+      }
+    }
+  }
+};
+</script>
