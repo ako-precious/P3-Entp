@@ -4,11 +4,11 @@
     >
         <div class="w-full">
             <h1
-                data-replace="Send A Message."
+                data-replace="Send WhatsApp Message."
                 role="heading"
                 class="swap leading-10 mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75"
             >
-                <span>Send A Message. </span>
+                <span>Send WhatsApp Message. </span>
             </h1>
         </div>
 
@@ -24,8 +24,7 @@
                         required
                     />
                     <label for="floating_first_name" class="label"
-                        >Phone Number </label
-                    >
+                        >Phone Number </label>
                 </div>
                 
                 <div class="relative z-0 w-full mb-6 group">
