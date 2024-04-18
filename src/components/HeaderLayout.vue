@@ -5,8 +5,8 @@
    
     <div class="dropdown">
   <input type="checkbox" id="dropdown">
-  <label class="dropdown__face" for="dropdown">
-      <div class="dropdown__text button h-6 text-red">  
+  <label class="dropdown__face cursor-pointer" for="dropdown">
+      <div class="dropdown__text button h-6 text-red font-semibold ">  
         <!-- <button class=" text-black shadow-extra-small rounded-md cursor-pointer w-full  text-oynx dark:text-snow font-semibold border-none flex justify-center items-center"> -->
                                         <span
                                             class="span-mother flex overflow-hidden">
@@ -48,8 +48,8 @@
     <h1
       class="jacquard-24-regular text-3xl  p-3 mr-4 whitespace-nowrap tracking-widest font-black text-red z-10 "
       
-    >
-      P3 Enterprise
+    ><a href="#">  P3 Enterprise</a>
+    
     </h1>
   </header>
 </template>
@@ -90,13 +90,24 @@ export default {
 
 .dropdown__face,
 .dropdown__items {
-  background-color: #fff;
+   
   padding: 15px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
 }
 
+.dropdown__face{
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.24);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.dropdown__face:hover,
+.dropdown__items{
+    background: white;
+}
 .dropdown__face {
   display: block;
   position: relative;
@@ -147,6 +158,9 @@ input:checked ~ .dropdown__items {
   top: calc(100% + 25px);
   visibility: visible;
   opacity: 1;
+}
+input:checked ~ .dropdown__face {
+  background: white;
 }
 
 
