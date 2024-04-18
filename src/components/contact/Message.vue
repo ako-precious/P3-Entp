@@ -4,11 +4,11 @@
     >
         <div class="w-full">
             <h1
-                data-replace="Send WhatsApp Message."
+                data-replace="Send A WhatsApp Message."
                 role="heading"
                 class="swap leading-10 mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75"
             >
-                <span>Send WhatsApp Message. </span>
+                <span>Send A WhatsApp Message. </span>
             </h1>
         </div>
 

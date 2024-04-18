@@ -133,14 +133,14 @@ function parallax(e) {
     left: 0;
 }
 
-.swap::before {
+/* .swap::before {
     background-color: #93032e;
     height: 2px;
     bottom: 0;
     transform-origin: 100% 50%;
     transform: scaleX(0);
     transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1);
-}
+} */
 
 .swap::after {
     content: attr(data-replace);

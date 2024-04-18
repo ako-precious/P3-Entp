@@ -3,10 +3,10 @@
     class="   m-auto  fixed w-full top-0 flex justify-between p-3  lg:px-12 items-center z-50 transition-all"
   >
    
-    <div class="dropdown">
+    <div class="dropdown jacquard-24-regular">
   <input type="checkbox" id="dropdown">
-  <label class="dropdown__face cursor-pointer" for="dropdown">
-      <div class="dropdown__text button h-6 text-red font-semibold ">  
+  <label class="dropdown__face backdrop-blur-[25px]  backdrop-saturate-[200%] cursor-pointer" for="dropdown">
+      <div class="dropdown__text text-2xl  button h-6 text-red font-semibold ">  
         <!-- <button class=" text-black shadow-extra-small rounded-md cursor-pointer w-full  text-oynx dark:text-snow font-semibold border-none flex justify-center items-center"> -->
                                         <span
                                             class="span-mother flex overflow-hidden">
@@ -24,14 +24,14 @@
                                     <!-- </button> -->
                                         </div>
 
-    <div class="dropdown__arrow text-red"></div>
+    <div class="dropdown__arrow text-red "></div>
   </label>
-  <ul class="dropdown__items">
+  <ul class="dropdown__items text-lg">
     <li>🙂</li>
     <li>😺</li>
     <li>😽</li>
     <li>😎</li>
-    <li>🤗</li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
 
@@ -98,9 +98,7 @@ export default {
 }
 
 .dropdown__face{
-    backdrop-filter: blur(8px) saturate(200%);
-    -webkit-backdrop-filter: blur(8px) saturate(200%);
-    background-color: rgba(17, 25, 40, 0.24);
+    background-color: rgba(17, 25, 40, 0.2);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -163,18 +161,9 @@ input:checked ~ .dropdown__face {
   background: white;
 }
 
-
-
-
-
-
 svg {
   display: none;
 }
-
-
-
-
 
 .button:hover .span-mother {
     position: absolute;
@@ -245,20 +234,7 @@ svg {
     transition: 0.7s;
 }
 
-/* Glassmorphism card effect */
-.card {
-    backdrop-filter: blur(8px) saturate(200%);
-    -webkit-backdrop-filter: blur(8px) saturate(200%);
-    background-color: rgba(17, 25, 40, 0.24);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
 
-.jacquard-24-regular {
-    font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
+
 
 </style>
