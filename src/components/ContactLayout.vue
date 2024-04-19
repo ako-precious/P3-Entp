@@ -7,7 +7,7 @@
             <div
                 class="container m-auto lg:py-6 bg-transparent flex justify-center items-center"
             >
-                <div v-motion-roll-visible-left :delay="200"
+                <div  v-motion-slide-visible-bottom :delay="200"
                     class="m-auto w-full md:w-7/12 flex bg-darkblue p-6 flex-col-reverse lg:flex-row justify-center items-center shadow-xl rounded-xl"
                 >
                     <slot></slot>
