@@ -15,7 +15,7 @@
     class="self-center z-30"
   >
 </Parallaxy>
-    <Contact>
+    <Contact class="fixed">
       <Message class="z-10" />
     </Contact>
 </template>

@@ -277,6 +277,45 @@ export default {
 }
 </script>
 
+<!-- <script>
+export default {
+  data() {
+    return {
+       
+      translateX: 0
+    }
+  },
+  mounted() {
+    // Listen for scroll events
+    document.addEventListener("mousemove", this.parallax);
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeUnmount() {
+      // Remove scroll event listener to avoid memory leaks
+      document.removeEventListener("mousemove", this.parallax);
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      // Calculate the new translateY value based on scroll position
+      const scrollTop = window.scrollY
+      this.translateX = scrollTop / 1.5
+      console.log(this.translateX);
+      // Adjust the multiplier for desired parallax effect
+    } ,
+    parallax(e) {
+      const layers = document.querySelectorAll(".layer");
+      layers.forEach((layer) => {
+        const speed = layer.getAttribute("data-speed");
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
+    }
+  }
+}
+</script> -->
+
 <style scoped>
 .circular {
   /* font-size: 1em; */
