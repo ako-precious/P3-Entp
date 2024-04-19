@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center h-full items-center"
+    class="container m-auto bg-transparent my-16 lg:my-0 flex flex-col lg:flex-row justify-center h-full items-center"
   >
     <div class="w-full lg:w-6/12 py-6 relative written-text">
       <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
@@ -26,16 +26,16 @@
         class="outer w-64 md:w-80 h-64 md:h-80 m-auto grid place-items-center layer"
         data-speed="0"
       >
-      <div class="relative rounded-xl w-[230px]" >
-        <div class="absolute rounded-xl w-full  bg-black bg-opacity-90 h-full ">
+        <div class="relative rotate-12 rounded-xl w-[220px] parallax layer"  @mousemove="parallax"  data-speed="-5" >
+          <div class="absolute rounded-xl w-full bg-black bg-opacity-80 h-full"></div>
+          <div class="absolute -z-10 -m-3 w-full rounded-xl border-2 border-white h-full"></div>
+          <div class="absolute -z-10 -m-6 w-full rounded-xl border-2 border-white h-full"></div>
 
-        </div>
-
-          <video ref="videoElement"  class="rounded-xl " width="230" autoplay muted loop  >
+          <video ref="videoElement" class="rounded-xl" width="220" autoplay muted loop>
             <source src="/src/assets/images/wedding.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-      </div>
+        </div>
         <!-- <iframe src="https://assets.pinterest.com/ext/embed.html?id=767511961522882414" height="520" width="236" frameborder="0" scrolling="no" ></iframe> -->
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -69,11 +69,14 @@ export default {
 
     // this.$refs.videoElement.playbackRate = 0.5;
     this.$refs.videoElement.addEventListener('loadedmetadata', () => {
-  this.$refs.videoElement.playbackRate = 0.5;
-});
+      this.$refs.videoElement.playbackRate = 0.5
+    })
 
-
-
+    document.addEventListener('mousemove', this.parallax)
+  },
+  beforeUnmount() {
+    // Remove scroll event listener to avoid memory leaks
+    document.removeEventListener('mousemove', this.parallax)
   },
   methods: {
     attachHoverListeners() {
@@ -81,6 +84,15 @@ export default {
         letter.addEventListener('mouseover', () => {
           letter.classList.toggle('active')
         })
+      })
+    },
+    parallax(e) {
+      const layers = document.querySelectorAll('.layer')
+      layers.forEach((layer) => {
+        const speed = layer.getAttribute('data-speed')
+        const x = (window.innerWidth - e.pageX * speed) / 100
+        const y = (window.innerHeight - e.pageY * speed) / 100
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
       })
     }
   }

@@ -2,10 +2,10 @@
   <header
     class="m-auto fixed w-full top-0 flex justify-between p-3 lg:px-12 items-center z-50 transition-all"
   >
-    <div class="dropdown group text-red button">
+    <div class="dropdown group bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded-3xl text-red button">
       <input type="checkbox" id="dropdown" />
       <label
-        class="dropdown__face bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 border border-gray-100 cursor-pointer"
+        class="dropdown__face rounded-md cursor-pointer"
         for="dropdown"
       >
         <div class="dropdown__text text-lg sm:text-xl group-hover:text-darkblue h-6 font-semibold">
@@ -95,11 +95,6 @@ export default {
   border-radius: 25px;
 }
 
-.dropdown__face {
-  background-color: rgba(17, 25, 40, 0.2);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
 .dropdown__face:hover,
 .dropdown__items {
   background: white;

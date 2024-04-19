@@ -16,9 +16,9 @@
         </div>
       </div>
     </div>
-    <WorksPhone />
-    <div class="container  relative hidden lg:flex flex-col justify-center items-center m-auto">
-        <div v-motion-slide-visible-left :delay="300" class="flex items-center pt-12 lg:gap-6">
+    <!-- <WorksPhone /> -->
+    <div class="container  relative flex flex-col justify-center items-center m-auto">
+        <div v-motion-slide-visible-left :delay="300" class="flex flex-col lg:flex-row items-center pt-12 lg:gap-6">
       
         <h1
           data-jarallax-element="0 -200"
@@ -75,7 +75,7 @@
         </div>
         </div>
       </div>
-      <div v-motion-slide-visible-right :delay="300" class="flex flex-row-reverse py-6 items-center lg:gap-6">
+      <div v-motion-slide-visible-right :delay="300" class="flex flex-col lg:flex-row-reverse py-6 items-center lg:gap-6">
         <h1
         class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
         >
@@ -130,7 +130,7 @@
           </div>
         </div>
       </div>
-        <div v-motion-slide-visible-left :delay="300" class="flex items-center pt-12 lg:gap-6">
+        <div v-motion-slide-visible-left :delay="300" class="flex  flex-col lg:flex-row items-center pt-12 lg:gap-6">
       
         <h1
           data-jarallax-element="0 -200"
@@ -187,7 +187,7 @@
         </div>
         </div>
       </div>
-      <div v-motion-slide-visible-right :delay="300" class="flex flex-row-reverse py-6 items-center lg:gap-6">
+      <div v-motion-slide-visible-right :delay="300" class="flex flex-col lg:flex-row-reverse py-6 items-center lg:gap-6">
         <h1
         class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
         >
@@ -247,7 +247,7 @@
   </section>
 </template>
 <script setup>
-import WorksPhone from './WorksPhone.vue'
+// import WorksPhone from './WorksPhone.vue'
 import Parallaxy from '@lucien144/vue3-parallaxy'
 </script>
 
