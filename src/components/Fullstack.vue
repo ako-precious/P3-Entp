@@ -26,18 +26,9 @@
                 class="outer w-64 md:w-80 h-64 md:h-80 m-auto grid place-items-center layer"
                 data-speed="0"
             >
-                <div
-                    class="waterlike z-20 bg-red w-full h-full overflow-hidden transition-all delay-75 duration-500"
-                >
-                    <img
-                        src="../assets/images/akoprecious.jpg"
-                        class="w-full h-full object-cover"
-                        alt=""
-                    />
-                </div>
-                <div
-                    class="waterlike z-10 below bg-red w-full h-full overflow-hidden transition-all delay-100 duration-700 mt-8 mr-8"
-                ></div>
+            <svg class=" absolute w-full h-full object-cover"   viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#FF0066" d="M42.1,-39.7C53.8,-30.5,61.9,-15.2,60.5,-1.4C59.2,12.5,48.4,25.1,36.7,38.9C25.1,52.8,12.5,68,1,66.9C-10.5,65.9,-21,48.7,-37.1,34.9C-53.2,21,-74.9,10.5,-80.2,-5.3C-85.5,-21.1,-74.4,-42.2,-58.3,-51.4C-42.2,-60.6,-21.1,-58,-2.9,-55.1C15.2,-52.2,30.5,-49,42.1,-39.7Z" transform="translate(100 100)" />
+</svg>
             </div>
         </div>
     </div>

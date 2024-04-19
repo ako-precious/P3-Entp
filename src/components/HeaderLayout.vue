@@ -1,55 +1,56 @@
 <template>
-  <header 
-    class="   m-auto  fixed w-full top-0 flex justify-between p-3  lg:px-12 items-center z-50 transition-all"
+  <header
+    class="m-auto fixed w-full top-0 flex justify-between p-3 lg:px-12 items-center z-50 transition-all"
   >
-   
-    <div class="dropdown jacquard-24-regular">
-  <input type="checkbox" id="dropdown">
-  <label class="dropdown__face backdrop-blur-[25px]  backdrop-saturate-[200%] cursor-pointer" for="dropdown">
-      <div class="dropdown__text text-2xl  button h-6 text-red font-semibold ">  
-        <!-- <button class=" text-black shadow-extra-small rounded-md cursor-pointer w-full  text-oynx dark:text-snow font-semibold border-none flex justify-center items-center"> -->
-                                        <span
-                                            class="span-mother flex overflow-hidden">
-                                            <span>M</span>
-                                            <span>e</span>
-                                            <span>n</span>
-                                            <span>u</span>  
-                                        </span>
-                                        <span class="span-mother2 text-persian">
-                                            <span>M</span>
-                                            <span>e</span>
-                                            <span>n</span>
-                                            <span>u</span>
-                                        </span>
-                                    <!-- </button> -->
-                                        </div>
+    <div class="dropdown group text-red button">
+      <input type="checkbox" id="dropdown" />
+      <label
+        class="dropdown__face backdrop-blur-[25px] backdrop-saturate-[200%] cursor-pointer"
+        for="dropdown"
+      >
+        <div class="dropdown__text text-lg sm:text-xl group-hover:text-darkblue h-6 font-semibold">
+          <span class="span-mother flex overflow-hidden">
+            <span>M</span>
+            <span>e</span>
+            <span>n</span>
+            <span>u</span>
+          </span>
+          <span class="span-mother2 text-persian">
+            <span>M</span>
+            <span>e</span>
+            <span>n</span>
+            <span>u</span>
+          </span>
+        </div>
 
-    <div class="dropdown__arrow text-red "></div>
-  </label>
-  <ul class="dropdown__items text-lg">
-    <li>🙂</li>
-    <li>😺</li>
-    <li>😽</li>
-    <li>😎</li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</div>
+        <div class="dropdown__arrow text-red"></div>
+      </label>
+      <ul class="dropdown__items text-lg">
+        <li>🙂</li>
+        <li>😺</li>
+        <li>😽</li>
+        <li>😎</li>
+        <li class="hover:text-darkblue"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-<svg>
-  <filter id="goo">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-    <feBlend in="SourceGraphic" in2="goo" />
-  </filter>
-</svg>
-    <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#FF0066" d="M42.1,-39.7C53.8,-30.5,61.9,-15.2,60.5,-1.4C59.2,12.5,48.4,25.1,36.7,38.9C25.1,52.8,12.5,68,1,66.9C-10.5,65.9,-21,48.7,-37.1,34.9C-53.2,21,-74.9,10.5,-80.2,-5.3C-85.5,-21.1,-74.4,-42.2,-58.3,-51.4C-42.2,-60.6,-21.1,-58,-2.9,-55.1C15.2,-52.2,30.5,-49,42.1,-39.7Z" transform="translate(100 100)" />
-</svg> -->
+    <svg>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix
+          in="blur"
+          type="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+          result="goo"
+        />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </svg>
+
     <h1
-      class="jacquard-24-regular text-3xl  p-3 mr-4 whitespace-nowrap tracking-widest font-black text-red z-10 "
-      
-    ><a href="#">  P3 Enterprise</a>
-    
+      class="logo text-xl sm:text-2xl md:text-3xl p-3 mr-4 whitespace-nowrap tracking-widest font-black text-red z-10"
+    >
+      <a href="#"> P3 Enterprise</a>
     </h1>
   </header>
 </template>
@@ -58,9 +59,8 @@
 // Creating a smoke animation
 export default {
   inheritAttrs: false,
- 
+
   methods: {
-   
     menuCloser() {
       document.querySelector('.open').classList.toggle('right-28')
       document.querySelector('.open').classList.toggle('right-0')
@@ -80,31 +80,29 @@ export default {
   }
 }
 </script>
-<style >
-
+<style>
 .dropdown {
   position: relative;
-  width: 150px;
+  width: 110px;
   filter: url(#goo);
 }
 
 .dropdown__face,
 .dropdown__items {
-   
   padding: 15px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
 }
 
-.dropdown__face{
-    background-color: rgba(17, 25, 40, 0.2);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+.dropdown__face {
+  background-color: rgba(17, 25, 40, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .dropdown__face:hover,
-.dropdown__items{
-    background: white;
+.dropdown__items {
+  background: white;
 }
 .dropdown__face {
   display: block;
@@ -127,7 +125,7 @@ export default {
 }
 
 .dropdown__items::before {
-  content: "";
+  content: '';
   background-color: #fff;
   position: absolute;
   bottom: 100%;
@@ -137,8 +135,8 @@ export default {
 }
 
 .dropdown__arrow {
-  border-bottom: 2px solid #93032E;
-  border-right: 2px solid #93032E;
+  border-bottom: 2px solid #93032e;
+  border-right: 2px solid #93032e;
   position: absolute;
   top: 50%;
   right: 30px;
@@ -166,75 +164,71 @@ svg {
 }
 
 .button:hover .span-mother {
-    position: absolute;
+  position: absolute;
 }
 
 .button:hover .span-mother span {
-    transform: translateY(1.3em);
+  transform: translateY(1.3em);
 }
 
 .button .span-mother span:nth-child(1) {
-    transition: 0.2s;
+  transition: 0.2s;
 }
 
 .button .span-mother span:nth-child(2) {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button .span-mother span:nth-child(3) {
-    transition: 0.4s;
+  transition: 0.4s;
 }
 
 .button .span-mother span:nth-child(4) {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .button .span-mother span:nth-child(5) {
-    transition: 0.6s;
+  transition: 0.6s;
 }
 
 .button .span-mother span:nth-child(6) {
-    transition: 0.7s;
+  transition: 0.7s;
 }
 .button .span-mother2 {
-    display: flex;
-    position: absolute;
-    overflow: hidden;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
 }
 
 .button .span-mother2 span {
-    transform: translateY(-1.5em);
+  transform: translateY(-1.5em);
 }
 
 .button:hover .span-mother2 span {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .button .span-mother2 span {
-    transition: 0.2s;
+  transition: 0.2s;
 }
 
 .button .span-mother2 span:nth-child(2) {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button .span-mother2 span:nth-child(3) {
-    transition: 0.4s;
+  transition: 0.4s;
 }
 
 .button .span-mother2 span:nth-child(4) {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .button .span-mother2 span:nth-child(5) {
-    transition: 0.6s;
+  transition: 0.6s;
 }
 
 .button .span-mother2 span:nth-child(6) {
-    transition: 0.7s;
+  transition: 0.7s;
 }
-
-
-
-
 </style>

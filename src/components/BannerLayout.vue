@@ -1,12 +1,10 @@
 <template>
     <Header />
-    <div class="relative overflow-hidden">
-        <NavLayout />
-    </div>
-
+   
     <section
-        class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto"
-    >
+        class="min-h-screen banner overflow-hidden relative w-full m-auto"
+    > 
+    <!-- <img src="../assets/images/Traditional Wedding.jpg"alt=""> -->
         <Parallax />
       
         <slot></slot>
@@ -16,27 +14,23 @@
 <script setup>
 import Parallax from "./ParallaxLayout.vue";
 import Header from "./HeaderLayout.vue";
-import NavLayout from "./NavLayout.vue";
 import { onMounted } from "vue";
 
 onMounted(() => {
     gsap.timeline()
-        .from(".typing", {
-            duration: 3,
-            text: "",
+       
+        .from(".logo", {
+            duration: 1.5,
+            opacity: 0,
+            top: -100,
+            ease: "slow",
         })
-        .to(".header", {
-            duration: 1,
-            height: "60px",
-        })
-        .to(".hide", {
-            duration: 1,
-            fontSize: "14px",
-        })
-        .to(".marks", {
-            duration: 1,
-            opacity: 1,
-            ease: "bounce",
+        
+        .from(".button", {
+            duration: 1.5,
+            opacity: 0,
+            left: -100,
+            ease: "slow",
         })
         .from(".banner", {
             duration: 1.5,
