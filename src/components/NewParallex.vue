@@ -1,7 +1,7 @@
 <template>
   <div class="parallax-container" ref="parallaxContainer">
-    <div class="parallax-section" :style="{ transform: `translateY(${translateY}px)` }">
-      <!-- Content of the parallax section -->
+    <div class="parallax-section " :style="{ transform: `translateY(${translateX}px)` }">
+      <!-- Content of the parallax section -->hjgekrjjjjjjjjjjjj
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   data() {
     return {
        
-      translateY: 0
+      translateX: 0
     }
   },
   mounted() {
@@ -26,7 +26,9 @@ export default {
     handleScroll() {
       // Calculate the new translateY value based on scroll position
       const scrollTop = window.scrollY
-      this.translateY = scrollTop * 0.5 // Adjust the multiplier for desired parallax effect
+      this.translateX = scrollTop / 7
+      console.log(this.translateX);
+      // Adjust the multiplier for desired parallax effect
     }
   }
 }
@@ -43,8 +45,8 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 300px;
   background-image: url('/src/assets/images/Àdúrà òbí 🤍_ Yorùbá Wedding.jpeg');
   background-size: cover;
   background-position: center;

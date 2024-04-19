@@ -5,7 +5,7 @@
     <div class="dropdown group text-red button">
       <input type="checkbox" id="dropdown" />
       <label
-        class="dropdown__face backdrop-blur-[25px] backdrop-saturate-[200%] cursor-pointer"
+        class="dropdown__face bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 border border-gray-100 cursor-pointer"
         for="dropdown"
       >
         <div class="dropdown__text text-lg sm:text-xl group-hover:text-darkblue h-6 font-semibold">
