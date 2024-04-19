@@ -1,12 +1,12 @@
 <template>
   <section class="z-20 relative workssection py-12 min-h-screen bg-orange overflow-hidden" id="works" :style="{ transform: `translateY(${translateX}px)` }">
-    <div class="container m-auto bg-transparent flex flex-col overflow-hidden">
+    <div class="container m-auto bg-transparent flex flex-col ">
       <div class="w-full relative">
         <div class="flex m-auto">
           <h1
             :style="{ transform: `translateX(${translateX}px)` }"
             role="heading"
-            class="worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
+            class="sticky worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
           >
             <span>
               Selected Works. Selected Works. Selected Works. Selected Works. Selected Works.
@@ -269,7 +269,7 @@ export default {
     handleScroll() {
       // Calculate the new translateY value based on scroll position
       const scrollTop = window.scrollY
-      this.translateX = -scrollTop / 0.5
+      this.translateX = -scrollTop / 1.5
     //   console.log(this.translateX)
       // Adjust the multiplier for desired parallax effect
     }

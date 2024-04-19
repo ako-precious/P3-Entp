@@ -1,6 +1,6 @@
 <template>
   <MainLayout class="z-0 ">
-    <Fullstack />
+    <Introduction />
   </MainLayout>
   <Works />
 
@@ -21,7 +21,7 @@
 
 <script setup>
 import Contact from '../components/ContactLayout.vue'
-import Fullstack from '../components/FullStack.vue'
+import Introduction from '../components/IntroductionLayout.vue'
 // import NewParallex from '../components/NewParallex.vue'
 import MainLayout from '../components/BannerLayout.vue'
 import Message from '../components/contact/Message.vue'

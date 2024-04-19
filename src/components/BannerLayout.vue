@@ -2,17 +2,18 @@
     <Header />
    
     <section
-        class=" z-10 min-h-screen banner overflow-hidden relative w-full m-auto" style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);">
+        class=" z-10 min-h-screen banner overflow-hidden relative flex justify-center items-center
+         w-full m-auto" style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);">
  <div class="  w-full h-full">
         <!-- <img src="../assets/images/Traditional Wedding.jpg"alt=""> -->
-        <Parallax @mousemove="parallax"/>
+        <!-- <Parallax @mousemove="parallax"/> -->
       
         <slot></slot></div>
     </section>
 </template>
 
 <script setup>
-import Parallax from "./ParallaxLayout.vue";
+// import Parallax from "./ParallaxLayout.vue";
 import Header from "./HeaderLayout.vue";
 import { onMounted } from "vue";
 
@@ -32,12 +33,7 @@ onMounted(() => {
             left: -100,
             ease: "slow",
         })
-        .from(".banner", {
-            duration: 1.5,
-            opacity: 0,
-            top: -100,
-            ease: "slow",
-        })
+       
         .from(".written-text", {
             duration: 1,
             opacity: 0,
