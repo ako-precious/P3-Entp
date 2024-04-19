@@ -26,12 +26,12 @@
         class="outer w-64 md:w-80 h-64 md:h-80 m-auto grid place-items-center layer"
         data-speed="0"
       >
-        <div class="relative rotate-12 rounded-xl w-[220px] parallax layer"  @mousemove="parallax"  data-speed="-5" >
+        <div class="relative rounded-xl w-[220px] parallax layer"  @mousemove="parallax"  data-speed="-5" >
           <div class="absolute rounded-xl w-full bg-black bg-opacity-80 h-full"></div>
           <div class="absolute -z-10 -m-3 w-full rounded-xl border-2 border-white h-full"></div>
           <div class="absolute -z-10 -m-6 w-full rounded-xl border-2 border-white h-full"></div>
 
-          <video ref="videoElement" class="rounded-xl" width="220" autoplay muted loop>
+          <video  ref="videoPlayer" class="rounded-xl" width="220" autoplay muted loop>
             <source src="/src/assets/images/wedding.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -67,10 +67,8 @@ export default {
     this.letters = this.$refs.text.querySelectorAll('.smoke')
     this.attachHoverListeners()
 
-    // this.$refs.videoElement.playbackRate = 0.5;
-    this.$refs.videoElement.addEventListener('loadedmetadata', () => {
-      this.$refs.videoElement.playbackRate = 0.5
-    })
+    const video = this.$refs.videoPlayer;
+    video.playbackRate = 0.5;
 
     document.addEventListener('mousemove', this.parallax)
   },

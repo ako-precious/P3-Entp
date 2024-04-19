@@ -1,12 +1,12 @@
 <template>
-  <MainLayout class="z-0 ">
+  <MainLayout>
     <Introduction />
   </MainLayout>
   <Works />
 
   <!-- <NewParallex /> -->
   
-  <ToolStack class="" />
+  <!-- <ToolStack class="" /> -->
   <Parallaxy
     axis="y"
     :speed="-200"
@@ -25,7 +25,7 @@ import Introduction from '../components/IntroductionLayout.vue'
 // import NewParallex from '../components/NewParallex.vue'
 import MainLayout from '../components/BannerLayout.vue'
 import Message from '../components/contact/Message.vue'
-import ToolStack from '../components/ToolStack.vue'
+// import ToolStack from '../components/ToolStack.vue'
 import Works from '../components/WorksLayout.vue'
 import Parallaxy from '@lucien144/vue3-parallaxy'
 </script>
