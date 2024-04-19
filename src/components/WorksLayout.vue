@@ -4,7 +4,7 @@
         id="works"
     >
         <div
-            class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center"
+            class="container m-auto bg-transparent flex flex-col "
         >
             <div class="w-full  relative">
                 <div
@@ -12,12 +12,11 @@
                 >
                 <div class="flex overflow-hidden">
                     
-                    <h1
-                        data-replace="Selected Works. Selected Works. Selected Works. Selected Works."
+                    <h1 :style="{ transform: `translateX(${translateX}px)` }"
                         role="heading"
-                        class="worksheader whitespace-nowrap w-full no swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
+                        class="worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all "
                     >
-                        <span>Selected Works. Selected Works. Selected Works. Selected Works.</span>
+                        <span> Selected Works. Selected Works. Selected Works. Selected Works. Selected Works. Selected Works.</span>
                     </h1>
                    
                    
@@ -187,6 +186,33 @@
 </template>
 <script setup>
 import WorksPhone from "./WorksPhone.vue";
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+       
+      translateX: 0
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeUnmount() {
+      // Remove scroll event listener to avoid memory leaks
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      // Calculate the new translateY value based on scroll position
+      const scrollTop = window.scrollY
+      this.translateX = -scrollTop / 0.5
+      console.log(this.translateX);
+      // Adjust the multiplier for desired parallax effect
+    }
+  }
+}
 </script>
 
 <style scoped>
