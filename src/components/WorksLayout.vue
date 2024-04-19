@@ -50,7 +50,7 @@
                 >
                 <img
                     class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                    src="../assets/images/Yoruba weddings.jpeg"
+                    src="../assets/images/wedding.jpg"
                     alt=""
                     />
                 </div>
@@ -67,7 +67,7 @@
             >
             <img
             class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-            src="../assets/images/Yoruba weddings.jpeg"
+            src="../assets/images/wedding2.jpg"
             alt=""
             />
         </div>
@@ -106,7 +106,7 @@
           >
             <img
               class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-              src="../assets/images/Yoruba weddings.jpeg"
+              src="../assets/images/wedding4.jpg"
               alt=""
             />
           </div></Parallaxy> </div>
@@ -122,7 +122,7 @@
               >
                 <img
                   class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                  src="../assets/images/Yoruba weddings.jpeg"
+                  src="../assets/images/birthday3.jpg"
                   alt=""
                 />
               </div>
@@ -162,7 +162,7 @@
                 >
                 <img
                     class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                    src="../assets/images/Yoruba weddings.jpeg"
+                    src="../assets/images/wedding3.jpg"
                     alt=""
                     />
                 </div>
@@ -179,7 +179,7 @@
             >
             <img
             class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-            src="../assets/images/Yoruba weddings.jpeg"
+            src="../assets/images/weddingrings.jpeg"
             alt=""
             />
         </div>
@@ -218,7 +218,7 @@
           >
             <img
               class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-              src="../assets/images/Yoruba weddings.jpeg"
+              src="../assets/images/Venue.jpeg"
               alt=""
             />
           </div></Parallaxy> </div>
@@ -234,7 +234,7 @@
               >
                 <img
                   class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                  src="../assets/images/Yoruba weddings.jpeg"
+                  src="../assets/images/anniversary.jpg"
                   alt=""
                 />
               </div>
