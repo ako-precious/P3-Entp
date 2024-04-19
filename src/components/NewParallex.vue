@@ -1,5 +1,5 @@
 <template>
-  <div class="parallax-container" ref="parallaxContainer">
+  <div class="parallax-container " ref="parallaxContainer">
     <div class="parallax-section " :style="{ transform: `translateY(${translateX}px)` }">
       <!-- Content of the parallax section -->hjgekrjjjjjjjjjjjj
     </div>

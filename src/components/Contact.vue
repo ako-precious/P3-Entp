@@ -1,5 +1,5 @@
 <template>
-    <section class="relative overflow-hidden py-12 min-h-screen" id="contact" >
+    <section class="relative bg-green overflow-hidden py-12 min-h-screen" id="contact" >
     
         <div
             class="container m-auto lg:py-6 bg-transparent flex justify-center items-center"

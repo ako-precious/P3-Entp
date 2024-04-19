@@ -6,17 +6,35 @@
         <div
             class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center"
         >
-            <div class="w-full lg:w-7/12 relative">
+            <div class="w-full  relative">
                 <div
-                    class="flex w-64 md:w-96 lg:w-[600px] m-auto flex-col justify-center items-center md:items-start"
+                    class="flex  m-auto flex-col justify-center items-center md:items-start"
                 >
+                <div class="flex overflow-hidden">
+                    
                     <h1
                         data-replace="Selected Works."
                         role="heading"
-                        class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
+                        class="worksheader w-full no swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
                     >
                         <span>Selected Works. </span>
                     </h1>
+                    <h1
+                        data-replace="Selected Works."
+                        role="heading"
+                        class="worksheader  swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
+                    >
+                        <span>Selected Works. </span>
+                    </h1>
+                    <h1
+                        data-replace="Selected Works."
+                        role="heading"
+                        class="worksheader swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
+                    >
+                        <span>Selected Works. </span>
+                    </h1>
+                   
+                </div>
                 </div>
             </div>
             <div class="w-full lg:w-4/12 relative written-text"></div>
