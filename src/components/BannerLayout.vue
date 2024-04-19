@@ -2,8 +2,8 @@
     <Header />
    
     <section
-        class=" min-h-screen banner overflow-hidden relative w-full m-auto" :style="{ transform: `translateY(${translateX}px)` }">
- <div class="fixed w-full h-full">
+        class=" z-0 min-h-screen banner overflow-hidden relative w-full m-auto">
+ <div class=" fixed w-full h-full">
         <!-- <img src="../assets/images/Traditional Wedding.jpg"alt=""> -->
         <Parallax @mousemove="parallax"/>
       
@@ -51,6 +51,36 @@ onMounted(() => {
 });
 
 </script>
+
+<script>
+export default {
+  data() {
+    return {
+       
+      translateX: 0
+    }
+  },
+  mounted() {
+    // Listen for scroll events
+    document.addEventListener("mousemove", this.parallax);
+  },
+  beforeUnmount() {
+      // Remove scroll event listener to avoid memory leaks
+      document.removeEventListener("mousemove", this.parallax);
+  },
+  methods: {
+    parallax(e) {
+      const layers = document.querySelectorAll(".layer");
+      layers.forEach((layer) => {
+        const speed = layer.getAttribute("data-speed");
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
+    }
+  }
+}
+</script> 
 
 
 

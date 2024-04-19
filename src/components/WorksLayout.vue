@@ -270,7 +270,7 @@ export default {
       // Calculate the new translateY value based on scroll position
       const scrollTop = window.scrollY
       this.translateX = -scrollTop / 0.5
-      console.log(this.translateX)
+    //   console.log(this.translateX)
       // Adjust the multiplier for desired parallax effect
     }
   }
