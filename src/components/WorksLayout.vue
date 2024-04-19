@@ -13,26 +13,13 @@
                 <div class="flex overflow-hidden">
                     
                     <h1
-                        data-replace="Selected Works."
+                        data-replace="Selected Works. Selected Works. Selected Works. Selected Works."
                         role="heading"
-                        class="worksheader w-full no swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
+                        class="worksheader whitespace-nowrap w-full no swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
                     >
-                        <span>Selected Works. </span>
+                        <span>Selected Works. Selected Works. Selected Works. Selected Works.</span>
                     </h1>
-                    <h1
-                        data-replace="Selected Works."
-                        role="heading"
-                        class="worksheader  swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
-                    >
-                        <span>Selected Works. </span>
-                    </h1>
-                    <h1
-                        data-replace="Selected Works."
-                        role="heading"
-                        class="worksheader swap leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
-                    >
-                        <span>Selected Works. </span>
-                    </h1>
+                   
                    
                 </div>
                 </div>

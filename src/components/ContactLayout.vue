@@ -1,3 +1,4 @@
+
 <template>
     <section class="relative bg-green overflow-hidden py-12 min-h-screen" id="contact" >
     
@@ -12,3 +13,7 @@
         </div>
     </section>
 </template>
+<script setup >
+
+
+</script>

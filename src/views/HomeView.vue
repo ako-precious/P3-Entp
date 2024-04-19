@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import Contact from "../components/Contact.vue";
+import Contact from "../components/ContactLayout.vue";
 import Fullstack from "../components/Fullstack.vue";
 import NewParallex from "../components/NewParallex.vue";
 import MainLayout from "../components/BannerLayout.vue";
