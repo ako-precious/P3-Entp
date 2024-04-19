@@ -13,3 +13,24 @@
     <img src="../assets/images/11.png" data-speed="-5" class="parallax layer" />
     <img src="../assets/images/12.png" data-speed="5" class="parallax layer" />
 </template>
+<script>
+export default {
+  mounted() {
+    document.addEventListener("mousemove", this.parallax);
+  },
+  beforeUnmount() {
+    document.removeEventListener("mousemove", this.parallax);
+  },
+  methods: {
+    parallax(e) {
+      const layers = this.$el.querySelectorAll(".layer");
+      layers.forEach((layer) => {
+        const speed = layer.getAttribute("data-speed");
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
+    }
+  }
+};
+</script>

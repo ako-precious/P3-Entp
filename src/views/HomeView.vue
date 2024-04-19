@@ -1,15 +1,17 @@
 <template>
-    <MainLayout>
-        <Fullstack />
-    </MainLayout>
-    <Works />
+   
+        <MainLayout>
+            <Fullstack />
+        </MainLayout>
+        <Works />
+        
+        <NewParallex />
+        <ToolStack />
     
-    <NewParallex />
-    <ToolStack />
+        <Contact>
+            <Message />
+        </Contact>
 
-    <Contact>
-        <Message />
-    </Contact>
 </template>
 
 <script setup>
