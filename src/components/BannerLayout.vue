@@ -2,8 +2,8 @@
     <Header />
    
     <section
-        class=" z-0 min-h-screen banner overflow-hidden relative w-full m-auto">
- <div class=" fixed w-full h-full">
+        class=" z-10 min-h-screen banner overflow-hidden relative w-full m-auto" style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);">
+ <div class="  w-full h-full">
         <!-- <img src="../assets/images/Traditional Wedding.jpg"alt=""> -->
         <Parallax @mousemove="parallax"/>
       

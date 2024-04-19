@@ -1,12 +1,11 @@
 <template>
-  <MainLayout class=" ">
+  <MainLayout class="z-0 ">
     <Fullstack />
   </MainLayout>
   <Works />
 
-  <NewParallex />
-
-  <img src="https://picsum.photos/500" />
+  <!-- <NewParallex /> -->
+  
   <ToolStack class="" />
   <Parallaxy
     axis="y"
@@ -23,7 +22,7 @@
 <script setup>
 import Contact from '../components/ContactLayout.vue'
 import Fullstack from '../components/FullStack.vue'
-import NewParallex from '../components/NewParallex.vue'
+// import NewParallex from '../components/NewParallex.vue'
 import MainLayout from '../components/BannerLayout.vue'
 import Message from '../components/contact/Message.vue'
 import ToolStack from '../components/ToolStack.vue'

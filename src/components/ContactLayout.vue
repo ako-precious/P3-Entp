@@ -2,8 +2,8 @@
 <template>
     <!-- <Parallaxy :speed="20" :animation="(delta: number) => `transform: translate3d(0, ${delta}px, 0);`"> -->
 		
-        <section class="z-30 bg-green overflow-hidden py-12 min-h-screen" id="contact" >
-        <div class=" w-full h-full bottom-0 bg-green"> 
+        <section class="z-0 relative bg-green overflow-hidden py-12 min-h-screen" id="contact" >
+        <div class="fixed w-full h-full bottom-0 bg-green"> 
 
             <div
                 class=" container m-auto lg:py-6 bg-transparent flex justify-center items-center"
