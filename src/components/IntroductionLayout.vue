@@ -4,16 +4,7 @@
   >
     <div class="w-full lg:w-6/12 py-6 relative written-text">
       <div class="flex w-96 md:w-[450px] m-auto flex-col justify-center">
-        <!-- <h1
-                    data-replace="Full-Stack developer."
-                    role="heading"
-                    class="swap leading-10 pb-4 lg:text-7xl  text-darkblue text-3xl font-bold capitalize transition-all delay-75"
-                >
-                    <span
-                        >Full-Stack <br />
-                        developer.
-                    </span>
-                </h1> -->
+      
         <p
           ref="text"
           class="texts text-3xl md:text-5xl pb-4 text-darkblue"
