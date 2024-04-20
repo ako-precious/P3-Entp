@@ -10,7 +10,7 @@
         <div class="flex m-auto">
             <Parallaxy
                   axis="x"
-                  :speed="300"
+                  :speed="100"
                   :breakpoints="{ 3024: { axis: 'x', speed: 300 } }"
                 
                 >
@@ -259,7 +259,6 @@ class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2
     <!-- </Parallaxy> -->
 </template>
 <script setup>
-// import WorksPhone from './WorksPhone.vue'
 import Parallaxy from '@lucien144/vue3-parallaxy'
 </script>
 

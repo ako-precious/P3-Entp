@@ -1,9 +1,9 @@
 <template>
   <div
-    class="container m-auto bg-transparent my-16 lg:my-0 flex flex-col lg:flex-row justify-center h-full items-center"
+    class="container m-auto bg-transparent my-16 lg:my-0  flex flex-col lg:flex-row justify-center h-full items-center"
   >
     <div class="w-full lg:w-6/12 py-6 relative written-text">
-      <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
+      <div class="flex w-96 md:w-[450px] m-auto flex-col justify-center">
         <!-- <h1
                     data-replace="Full-Stack developer."
                     role="heading"
@@ -16,7 +16,7 @@
                 </h1> -->
         <p
           ref="text"
-          class="texts text-xl md:text-3xl pb-4 text-darkblue"
+          class="texts text-3xl md:text-5xl pb-4 text-darkblue"
           v-html="formattedText"
         ></p>
       </div>
