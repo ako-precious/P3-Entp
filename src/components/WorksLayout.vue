@@ -10,13 +10,13 @@
         <div class="flex m-auto">
             <Parallaxy
                   axis="x"
-                  :speed="50"
+                  :speed="100"
                 
                 >
           <h1
             
           role="heading"
-          class="sticky text-center worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
+          class="sticky text-right worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
           >
           <span>
               Who we are</span
