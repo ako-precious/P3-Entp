@@ -10,7 +10,7 @@
         <div class="flex m-auto">
             <Parallaxy
                   axis="x"
-                  :speed="100"
+                  :speed="50"
                 
                 >
           <h1
