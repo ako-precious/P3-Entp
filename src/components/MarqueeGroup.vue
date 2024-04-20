@@ -1,19 +1,11 @@
 <template>
     <div class="marquee__group">
-        <img class="m-auto" src="../assets/images/Vue.png" alt="" />
-        <img class="m-auto" src="../assets/images/tailwind.png" />
-        <img class="m-auto" src="../assets/images/html.png" alt="" />
-        <img class="m-auto" src="../assets/images/css.png" alt="" />
-        <img class="m-auto" src="../assets/images/php.png" alt="" />
-        <img class="m-auto" src="../assets/images/python.png" alt="" />
-        <img class="m-auto" src="../assets/images/js.png" alt="" />
-        <img class="m-auto" src="../assets/images/laravel.png" alt="" />
-        <img class="m-auto" src="../assets/images/livewire.png" alt="" />
-        <img class="m-auto" src="../assets/images/mysql.png" alt="" />
-        <img class="m-auto" src="../assets/images/jetstream.png" alt="" />
-        <img class="m-auto" src="../assets/images/git.png" alt="" />
-        <img class="m-auto" src="../assets/images/github.png" alt="" />
-        <img class="m-auto" src="../assets/images/docker.png" alt="" />
-        <img class="m-auto" src="../assets/images/vscode.png" alt="" />
+        <iframe class="m-auto rounded-xl" width="400" height="200" src="https://www.youtube.com/embed/oKEn_94u7Fc?si=eLyYOYgGwH0yaQNw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="m-auto rounded-xl" width="400" height="200" src="https://www.youtube.com/embed/m5E06rYEQ78?si=X2gsGTgFZ4IeYHsH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="m-auto rounded-xl" width="400" height="200" src="https://www.youtube.com/embed/cKMazxu9GdI?si=nLdTnacqpLpriSPg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="m-auto rounded-xl" width="400" height="200" src="https://www.youtube.com/embed/KvH2RBMFWb8?si=sPlieb_txNVQBzQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="m-auto rounded-xl" width="400" height="200" src="https://www.youtube.com/embed/oZ9QBOc0WUU?si=PEU4CEryMOkIfxfV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="m-auto rounded-xl" width="400" height="200" src="https://www.youtube.com/embed/Fh6b43la0lg?si=vh1MyZ-5HcH8rHRN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <section class="relative overflow-hidden py-12 lg:py-20 min-h-screen">
+    <section class="z-30 bg-green relative overflow-hidden py-12 lg:pt-20 min-h-screen">
         <div
             class="container m-auto lg:py-3 bg-transparent flex flex-col lg:flex-row justify-center items-center"
         >
@@ -26,11 +26,7 @@
                     <MarqueeGroup />
                 </div>
 
-                <div class="marquee marquee--reverse">
-                    <MarqueeGroup />
-
-                    <MarqueeGroup />
-                </div>
+                
             </article>
         </div>
     </section>
@@ -80,7 +76,9 @@ import MarqueeGroup from "./MarqueeGroup.vue";
     min-width: 100%;
     animation: scroll-x var(--duration) linear infinite;
 }
-
+.marquee__group:hover {
+    animation: none;
+}
 @media (prefers-reduced-motion: reduce) {
     .marquee__group {
         animation-play-state: paused;
