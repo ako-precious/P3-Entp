@@ -11,7 +11,6 @@
             <Parallaxy
                   axis="x"
                   :speed="100"
-                  :breakpoints="{ 3024: { axis: 'x', speed: 100 } }"
                 
                 >
           <h1
