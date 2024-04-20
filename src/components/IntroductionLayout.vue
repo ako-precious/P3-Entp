@@ -21,7 +21,7 @@
         ></p>
       </div>
     </div>
-    <div class="w-full lg:w-6/12 pt-3 m-auto relative my-image">
+    <div class="w-full lg:w-6/12 pb-12 m-auto relative my-image">
       <div
         class="outer w-64 md:w-80 h-64 md:h-80 m-auto grid place-items-center layer"
         data-speed="0"
