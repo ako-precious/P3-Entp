@@ -6,11 +6,10 @@
           <h1
             :style="{ transform: `translateX(${translateX}px)` }"
             role="heading"
-            class="sticky worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
+            class="sticky float-right worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
           >
             <span>
-              Selected Works. Selected Works. Selected Works. Selected Works. Selected Works.
-              Selected Works.</span
+             Who we are</span
             >
           </h1>
         </div>
@@ -255,7 +254,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
 export default {
   data() {
     return {
-      translateX: 0
+      translateX: 50
     }
   },
   mounted() {
@@ -269,7 +268,7 @@ export default {
     handleScroll() {
       // Calculate the new translateY value based on scroll position
       const scrollTop = window.scrollY
-      this.translateX = -scrollTop / 1.5
+      this.translateX = -scrollTop / 5
     //   console.log(this.translateX)
       // Adjust the multiplier for desired parallax effect
     }
