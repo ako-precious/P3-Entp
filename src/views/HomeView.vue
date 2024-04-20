@@ -2,13 +2,13 @@
   <MainLayout>
     <Introduction />
   </MainLayout>
-  <NewParallax />
   <Works />
+  <NewParallax />
   
   
   <Contact >
-    <Message  />
-  </Contact>
+      <Message  />
+    </Contact>
   <!-- <ToolStack class="" /> -->
   <!-- <Parallaxy
   axis="y"

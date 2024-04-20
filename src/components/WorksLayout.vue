@@ -1,17 +1,29 @@
 <template>
-  <section class="z-20 relative workssection py-12 min-h-screen bg-orange overflow-hidden" id="works" :style="{ transform: `translateY(${translateX}px)` }">
+  <!-- <Parallaxy
+                  axis="y"
+                  :speed="100"
+                
+                >  -->
+                <section class="z-20 relative workssection py-12 min-h-screen bg-orange overflow-hidden" id="works" >
     <div class="container m-auto bg-transparent flex flex-col ">
       <div class="w-full relative">
         <div class="flex m-auto">
+            <Parallaxy
+                  axis="x"
+                  :speed="300"
+                  :breakpoints="{ 3024: { axis: 'x', speed: 300 } }"
+                
+                >
           <h1
-            :style="{ transform: `translateX(${translateX}px)` }"
-            role="heading"
-            class="sticky float-right worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
+            
+          role="heading"
+          class="sticky text-center worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-white text-3xl font-bold capitalize transition-all"
           >
-            <span>
-             Who we are</span
-            >
-          </h1>
+          <span>
+              Who we are</span
+              >
+            </h1>
+        </Parallaxy>
         </div>
       </div>
     </div>
@@ -71,179 +83,180 @@
             />
         </div>
     </Parallaxy>
-        </div>
-        </div>
-      </div>
-      <div v-motion-slide-visible-right :delay="300" class="flex flex-col lg:flex-row-reverse py-6 items-center lg:gap-6">
-        <h1
-        class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
-        >
-        <Parallaxy
-                  axis="x"
-                  :speed="100"
-                > 
-          <span
-            >With over a decade of experience in the event planning industry, we have honed our
-            skills to perfection, ensuring seamless execution and attention to every detail. From
-            intimate gatherings to lavish celebrations, we approach each event with creativity,
-            innovation, and a personalized touch.
-          </span>
-        </Parallaxy>
-        </h1> 
-        <div class="box relative grid gap-6 col-span-2 row-span-3 lg:w-1/2 justify-center">
-            <div class="col-start-1 row-span-2 ">
-    
-           
-                <Parallaxy
-                  axis="y"
-                  :speed="-200"
-                  :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
-                  
-                >
-          <div
-            class="imgBx group relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500 delay-100"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-              src="../assets/images/wedding4.jpg"
-              alt=""
-            />
-          </div></Parallaxy> </div>
-          <div class="col-start-2 row-start-2 row-span-2">
-            <Parallaxy
-                  axis="y"
-                  :speed="200"
-                  :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
-                  
-                >
-              <div
-                class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500"
-              >
-                <img
-                  class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                  src="../assets/images/birthday3.jpg"
-                  alt=""
-                />
-              </div>
-            </Parallaxy>
-          </div>
-        </div>
-      </div>
-        <div v-motion-slide-visible-left :delay="300" class="flex  flex-col lg:flex-row items-center pt-12 lg:gap-6">
-      
-        <h1
-          data-jarallax-element="0 -200"
-          class="hover-3 leading-10 text-left mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
-        >  <Parallaxy
-                  axis="x"
-                  :speed="-100"
-                  :breakpoints="{ 3024: { axis: 'x', speed: -100 } }"
-                
-                >
-          <span>
-            P3 Enterprise believes in the power of unforgettable moments. Our passion lies in
-            crafting extraordinary experiences that leave a lasting impression on our clients and
-            their guests.
-          </span>
-        </Parallaxy>
-        </h1>
-        <div class="box relative grid gap-6 col-span-2 row-span-3 lg:w-1/2 justify-center">
-            <div class="col-start-2 row-span-2">
+</div>
+</div>
+</div>
+<div v-motion-slide-visible-right :delay="300" class="flex flex-col lg:flex-row-reverse py-6 items-center lg:gap-6">
+<h1
+class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
+>
+<Parallaxy
+          axis="x"
+          :speed="100"
+        > 
+  <span
+    >With over a decade of experience in the event planning industry, we have honed our
+    skills to perfection, ensuring seamless execution and attention to every detail. From
+    intimate gatherings to lavish celebrations, we approach each event with creativity,
+    innovation, and a personalized touch.
+  </span>
+</Parallaxy>
+</h1> 
+<div class="box relative grid gap-6 col-span-2 row-span-3 lg:w-1/2 justify-center">
+    <div class="col-start-1 row-span-2 ">
 
-                <Parallaxy
-                  axis="y"
-                  :speed="-200"
-                  :breakpoints="{ 3024: { axis: 'y', speed: -200 } }"
-                  
-                >
-                <div
-                class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500 delay-100"
-                >
-                <img
-                    class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                    src="../assets/images/wedding3.jpg"
-                    alt=""
-                    />
-                </div>
-            </Parallaxy>
-            
-        </div>
-        <div class="col-start-1 row-start-2 row-span-2">
-            <Parallaxy
-              axis="y"
-              :speed="200"           
-            >
-            <div
-            class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500"
-            >
-            <img
+   
+        <Parallaxy
+          axis="y"
+          :speed="-200"
+          :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
+          
+        >
+  <div
+    class="imgBx group relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500 delay-100"
+  >
+    <img
+      class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
+      src="../assets/images/wedding4.jpg"
+      alt=""
+    />
+  </div></Parallaxy> </div>
+  <div class="col-start-2 row-start-2 row-span-2">
+    <Parallaxy
+          axis="y"
+          :speed="200"
+          :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
+          
+        >
+      <div
+        class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500"
+      >
+        <img
+          class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
+          src="../assets/images/birthday3.jpg"
+          alt=""
+        />
+      </div>
+    </Parallaxy>
+  </div>
+</div>
+</div>
+<div v-motion-slide-visible-left :delay="300" class="flex  flex-col lg:flex-row items-center pt-12 lg:gap-6">
+
+<h1
+  data-jarallax-element="0 -200"
+  class="hover-3 leading-10 text-left mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
+>  <Parallaxy
+          axis="x"
+          :speed="-100"
+          :breakpoints="{ 3024: { axis: 'x', speed: -100 } }"
+        
+        >
+  <span>
+    P3 Enterprise believes in the power of unforgettable moments. Our passion lies in
+    crafting extraordinary experiences that leave a lasting impression on our clients and
+    their guests.
+  </span>
+</Parallaxy>
+</h1>
+<div class="box relative grid gap-6 col-span-2 row-span-3 lg:w-1/2 justify-center">
+    <div class="col-start-2 row-span-2">
+
+        <Parallaxy
+          axis="y"
+          :speed="-200"
+          :breakpoints="{ 3024: { axis: 'y', speed: -200 } }"
+          
+        >
+        <div
+        class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500 delay-100"
+        >
+        <img
             class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-            src="../assets/images/weddingrings.jpeg"
+            src="../assets/images/wedding3.jpg"
             alt=""
             />
         </div>
     </Parallaxy>
-        </div>
-        </div>
-      </div>
-      <div v-motion-slide-visible-right :delay="300" class="flex flex-col lg:flex-row-reverse py-6 items-center lg:gap-6">
-        <h1
-        class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
-        >
-        <Parallaxy
-                  axis="x"
-                  :speed="100"
-                > 
-          <span
-            >With over a decade of experience in the event planning industry, we have honed our
-            skills to perfection, ensuring seamless execution and attention to every detail. From
-            intimate gatherings to lavish celebrations, we approach each event with creativity,
-            innovation, and a personalized touch.
-          </span>
-        </Parallaxy>
-        </h1> 
-        <div class="box relative grid gap-6 col-span-2 row-span-3 lg:w-1/2 justify-center">
-            <div class="col-start-1 row-span-2 ">
     
-           
-                <Parallaxy
-                  axis="y"
-                  :speed="-200"
-                  :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
-                  
-                >
-          <div
-            class="imgBx group relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500 delay-100"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-              src="../assets/images/Venue.jpeg"
-              alt=""
-            />
-          </div></Parallaxy> </div>
-          <div class="col-start-2 row-start-2 row-span-2">
-            <Parallaxy
-                  axis="y"
-                  :speed="200"
-                  :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
-                  
-                >
-              <div
-                class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500"
-              >
-                <img
-                  class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
-                  src="../assets/images/anniversary.jpg"
-                  alt=""
-                />
-              </div>
-            </Parallaxy>
-          </div>
-        </div>
+</div>
+<div class="col-start-1 row-start-2 row-span-2">
+    <Parallaxy
+      axis="y"
+      :speed="200"           
+    >
+    <div
+    class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500"
+    >
+    <img
+    class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
+    src="../assets/images/weddingrings.jpeg"
+    alt=""
+    />
+</div>
+</Parallaxy>
+</div>
+</div>
+</div>
+<div v-motion-slide-visible-right :delay="300" class="flex flex-col lg:flex-row-reverse py-6 items-center lg:gap-6">
+<h1
+class="hover-3 leading-10 text-right mb-6 md:text-2xl lg:w-1/2 text-white text-2xl font-bold capitalize transition-all delay-75"
+>
+<Parallaxy
+          axis="x"
+          :speed="100"
+        > 
+  <span
+    >With over a decade of experience in the event planning industry, we have honed our
+    skills to perfection, ensuring seamless execution and attention to every detail. From
+    intimate gatherings to lavish celebrations, we approach each event with creativity,
+    innovation, and a personalized touch.
+  </span>
+</Parallaxy>
+</h1> 
+<div class="box relative grid gap-6 col-span-2 row-span-3 lg:w-1/2 justify-center">
+    <div class="col-start-1 row-span-2 ">
+
+   
+        <Parallaxy
+          axis="y"
+          :speed="-200"
+          :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
+          
+        >
+  <div
+    class="imgBx group relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500 delay-100"
+  >
+    <img
+      class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
+      src="../assets/images/Venue.jpeg"
+      alt=""
+    />
+  </div></Parallaxy> </div>
+  <div class="col-start-2 row-start-2 row-span-2">
+    <Parallaxy
+          axis="y"
+          :speed="200"
+          :breakpoints="{ 2024: { axis: 'y', speed: -200 } }"
+          
+        >
+      <div
+        class="imgBx group  relative w-[150px] h-[250px] overflow-hidden shadow-xl jarallax transition-all duration-500"
+      >
+        <img
+          class="absolute top-0 left-0 w-full h-full object-cover jarallax-image rotate-12 scale-150 transition-transform delay-75 ease-in-out duration-500 group-hover:rotate-0 group-hover:scale-100"
+          src="../assets/images/anniversary.jpg"
+          alt=""
+        />
       </div>
-     
-    </div>
-  </section>
+    </Parallaxy>
+  </div>
+</div>
+</div>
+
+</div>
+</section>
+    <!-- </Parallaxy> -->
 </template>
 <script setup>
 // import WorksPhone from './WorksPhone.vue'

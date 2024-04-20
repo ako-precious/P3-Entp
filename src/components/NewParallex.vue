@@ -1,4 +1,9 @@
 <template>
+    <Parallaxy
+                  axis="y"
+                  :speed="200"
+                
+                >
     <section
         class="bg-darkblue z-10 min-h-screen banner overflow-hidden relative flex justify-center items-center
          w-full m-auto" style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);"> 
@@ -163,6 +168,7 @@
         </div>
     </div>
     </section>
+    </Parallaxy>
 </template>
 <style scoped>
 .card {
