@@ -1,6 +1,6 @@
 <template>
    
-    <section
+    <section id="service"
         class="bg-darkblue z-10 min-h-screen banner overflow-hidden relative flex flex-col justify-center items-center
          w-full m-auto py-12 " style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);"> 
         

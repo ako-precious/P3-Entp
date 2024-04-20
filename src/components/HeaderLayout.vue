@@ -27,10 +27,10 @@
       </label>
       <ul class="dropdown__items text-lg">
         <li>🙂</li>
-        <li>😺</li>
-        <li>😽</li>
-        <li>😎</li>
+        <li class="hover:text-darkblue"><a href="#about">About</a></li>
+        <li class="hover:text-darkblue"><a href="#service">Services</a></li>
         <li class="hover:text-darkblue"><a href="#contact">Contact</a></li>
+        <li>🙂</li>
       </ul>
     </div>
 

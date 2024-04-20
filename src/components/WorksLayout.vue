@@ -4,7 +4,7 @@
                   :speed="100"
                 
                 >  -->
-                <section class="z-20 relative workssection py-12 min-h-screen bg-orange overflow-hidden" id="works" >
+                <section class="z-20 relative workssection py-12 min-h-screen bg-orange overflow-hidden" id="about" >
     <div class="container m-auto bg-transparent flex flex-col ">
       <div class="w-full relative">
         <div class="flex m-auto">
