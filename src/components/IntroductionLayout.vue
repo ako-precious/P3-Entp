@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container m-auto bg-transparent my-16 lg:my-0  flex flex-col lg:flex-row justify-center h-full items-center"
+    class="container m-auto bg-transparent my-16 lg:my-0  flex flex-col lg:flex-row justify-center min-h-screen items-center"
   >
     <div class="w-full lg:w-6/12 py-6 relative written-text">
       <div class="flex w-96 md:w-[450px] m-auto flex-col justify-center">
