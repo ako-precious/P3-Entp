@@ -9,7 +9,7 @@
         <Parallaxy axis="x" :speed="-100" :breakpoints="{ 3024: { axis: 'x', speed: -300 } }">
           <h1
             role="heading"
-            class="sticky text-center worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-3xl font-bold capitalize transition-all"
+            class="sticky text-white text-center worksheader whitespace-nowrap w-full leading-10 pb-4 lg:text-6xl md:text-5xl text-3xl font-bold capitalize transition-all"
           >
             <span> What We do</span>
           </h1>
