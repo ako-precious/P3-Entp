@@ -1,9 +1,9 @@
 <template>
   <section
     id="service"
-    class="bg-darkblue z-10 min-h-screen banner overflow-hidden relative flex flex-col justify-center items-center w-full m-auto py-12"
-    style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd)"
-  >
+    class="bg-green z-10 min-h-screen banner overflow-hidden relative flex flex-col justify-center items-center w-full m-auto py-12"
+    >
+    <!-- style="background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd)" -->
     <div class="w-full py-6 relative">
       <div v-motion-slide-visible-top :delay="300" class="flex m-auto">
         <Parallaxy axis="x" :speed="-100" :breakpoints="{ 3024: { axis: 'x', speed: -300 } }">
