@@ -76,7 +76,7 @@ export default {
   methods: {
     sendMessage() {
       // Replace '1234567890' with the recipient's phone number
-      const phoneNumber = '+17052793660';
+      const phoneNumber = '+239028962379';
       
       // Replace 'Hello!' with your desired message
       const message = this.message;
